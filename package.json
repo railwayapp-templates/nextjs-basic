@@ -1,26 +1,32 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "A minimal Node.js web application.",
+  "main": "app.js",
+  "author": "alphasec",
+  "license": "MIT",
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "axios": "^1.10.0",
+    "dotenv": "^17.2.3",
+    "expo-server-sdk": "^4.0.0",
+    "express": "^4.21.2",
+    "form-data": "^4.0.3",
+    "luxon": "^3.7.2",
+    "node-cron": "^4.2.1",
+    "pg": "^8.20.0",
+    "pg-hstore": "^2.3.4",
+    "qrcode": "^1.5.4",
+    "resend": "^6.12.4",
+    "sequelize": "^6.37.8",
+    "stream-chat": "^9.27.2"
   },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "nodemon": "^3.1.14",
+    "sequelize-cli": "^6.6.5"
   }
 }
